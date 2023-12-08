@@ -1,0 +1,287 @@
+    .resize-drag {
+      border-radius: 1rem;
+      color: black;
+      font-size: 1rem;
+      font-family: sans-serif;
+      touch-action: none;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      margin: 1em;
+      min-height: 350px;
+    }
+
+    .explore-card:hover {
+      transition: all 0.6s ease-in-out;
+      box-shadow: 0 4px 9px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    }
+
+    .drag {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+    }
+
+    .microdashboard-menu-option {
+      justify-content: center;
+      margin-left: 1rem;
+      color: #0029ff;
+      font-size: 15px;
+      margin-right: 0.25rem;
+    }
+
+    .info-button {
+      margin-bottom: 0;
+      background: #0028ff90;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 50%;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      border: none;
+      outline: 0;
+      transition: background .2s, opacity .2s, transform .2s;
+    }
+
+    .material-btn {
+      background: #fff;
+      color: #0029ff;
+      box-shadow: 0 4px 4px 0 #00000040;
+      font-size: large;
+      font-weight: 600;
+    }
+
+    .project-header {
+      font-size: 26px;
+      color: #0029ff;
+      padding-left: 70px;
+    }
+
+    .certificate {
+      aspect-ratio: 16/9;
+      font-family: var(--open-sans);
+      font-size: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+      display: grid;
+      grid-template-columns: 3.5fr 8.5fr;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      height: 450px;
+      border-radius: 10px;
+    }
+
+    .certificate-left>h6 {
+      font-size: 11px;
+      font-weight: bold;
+      font-family: var(--poppins);
+      text-align: center;
+      margin: 3em 0 0.5em 0;
+    }
+
+    .certificate-left {
+      color: #e0efff;
+      background-color: #1b3df8;
+      font-size: 10px;
+      padding: 2em 3em 2em 2em;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .certificate-left>ul>li {
+      margin-bottom: 0.6rem;
+    }
+
+    .certificate-right {
+      text-align: center;
+      padding: 1em;
+    }
+
+    .certificate-right>h5 {
+      margin: 2em 0 1.5em 0;
+      font-size: 20px;
+      padding: 0 0 0.5em 0;
+      width: max-content;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-family: var(--poppins);
+      font-weight: 800;
+    }
+
+    .certificate-user-name {
+      font-size: 20px;
+      color: #1b3df8;
+      font-family: var(--playfair-display);
+      font-style: italic;
+      margin: 1em;
+    }
+
+    .certificate-right>img {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .certificate-note {
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: larger;
+      font-weight: 600;
+    }
+
+    .certificate-description {
+      -webkit-line-clamp: 12;
+    }
+
+    .certificate-dt-logo {
+      box-shadow: 0 5px 10px rgb(0 0 0 / 5%), 0 3px 3px rgb(0 0 0 / 1%);
+      border-radius: 20px;
+      height: 35px;
+    }
+
+    .card>hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex: 1 1 auto;
+    }
+
+    .card-header {
+      margin-bottom: 0;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+      background-color: #fff;
+    }
+
+    .card-header:first-child {
+      border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0;
+    }
+
+    .media {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .media-body {
+      flex: 1 1;
+    }
+    
+    .card-background {
+      background-color: #f7fafc !important;
+    }
+
+    .bg-gradient-default {
+      background: linear-gradient(87deg, #002 0, #002e94 100%) !important;
+    }
+
+    .card-profile-image {
+      position: relative;
+    }
+
+    .card-profile-image img {
+      position: absolute;
+      left: 50%;
+      max-width: 180px;
+      transition: all .15s ease;
+      transform: translate(-50%, -30%);
+      border-radius: .375rem;
+    }
+
+    .card-profile-image img:hover {
+      transform: translate(-50%, -33%);
+    }
+
+    .card-profile-stats {
+      padding: 1rem 0;
+    }
+
+    .card-profile-stats>div {
+      margin-right: 1rem;
+      padding: .875rem;
+      text-align: center;
+    }
+
+    .card-profile-stats>div:last-child {
+      margin-right: 0;
+    }
+
+    .card-profile-stats>div .heading {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: block;
+    }
+
+    .card-profile-stats>div .description {
+      font-size: .875rem;
+      color: #adb5bd;
+    }
+
+    .main-content {
+      position: relative;
+    }
+
+    .main-content {
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      background-color: transparent;
+    }
+
+    .profile-container {
+      margin-top: -80px;
+      padding-right: 39px !important;
+      padding-left: 39px !important;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 600px;
+      transition: all .15s ease;
+      opacity: 0.9 !important;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      .mask {
+        transition: none;
+      }
+    }
+
+    .project-title {
+      font-size: 2.75rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .dtthon-profile-footer {
+      padding: 2.5rem 0;
+    }
+
+    .dtthon-profile-copyright {
+      font-size: smaller;
+      font-weight: 500;
+    }
+
+    .dtthon-profile-background {
+      min-height: 600px;
+      background-image: url(https://constructionexec.com/assets/site_18/images/article/102120123537.jpg?width=1280);
+      background-size: cover;
+      background-position: center top;
+    }
+
+    .profile-image {
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 10px;
+    }

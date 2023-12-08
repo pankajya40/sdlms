@@ -1,0 +1,68 @@
+sdlms-enquiry-form-builder label {
+    font-weight: 500;
+ }
+
+ [enquiry-block] {
+	border-radius: 12px!important;
+  }
+
+ sdlms-enquiry-form-builder .sdlms-btn {
+	background-color: #0029ff!important;
+  }
+
+ sdlms-enquiry-form-builder .delete-block-btn {
+	height: 35px;
+	width: 35px;
+	top: -18px;
+	right: 2px;
+	cursor: pointer;
+	z-index: 1;
+  }
+
+ sdlms-enquiry-form-builder .delete-block-btn i {
+	font-size: 20px;
+  }
+
+ sdlms-enquiry-form-builder .delete-option-btn {
+	right: 38px;
+	top: 3px;
+  }
+
+ sdlms-enquiry-form-builder .delete-option-btn, .conditional-block-btn {
+	cursor: pointer;
+  }
+
+ sdlms-enquiry-form-builder .helptext-tooltip {
+	position: relative;
+	display: inline-block;
+	transition: .3s;
+  }
+  
+  sdlms-enquiry-form-builder .helptext-tooltip .helptext-tooltiptext {
+	visibility: hidden;
+	background-color: #e2e2e2;
+	color: #000;
+	text-align: center;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	left: 180%;
+	width: auto;
+	padding: 5px 10px;
+	white-space: nowrap;
+  }
+  
+  sdlms-enquiry-form-builder .helptext-tooltip .helptext-tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent #e2e2e2 transparent transparent;
+  }
+  sdlms-enquiry-form-builder .helptext-tooltip:hover .helptext-tooltiptext {
+	visibility: visible;
+  }

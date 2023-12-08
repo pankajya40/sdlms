@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question Builder</title>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+    nav {
+        background: #f0f0f0;
+        padding: 1rem 0;
+        box-shadow: 0 4px 4px 0 #00000040;
+        position: sticky;
+        min-height: 60px;
+        height: calc(var(--sdlms-font-size)*5.625);
+        top: 0;
+        z-index: 999;
+    }
+</style>
+<script>
+    let config = [{
+            name: "clarification",
+            label: "Clarification",
+            questions: ["Would you explain _____ ?", "Could you explain _____ ?", "Can you explain _____ ?",
+                "Please explain _____ ?"
+            ]
+        },
+        {
+            name: "repetition",
+            label: "Repetition",
+            questions: ["Could you repeat _____ ?", "Could you repeat _____  please?",
+                "Could you repeat _____  again?", "Could you repeat _____  one more time?"
+            ]
+        },
+        {
+            name: "confirmation",
+            label: "Confirmation",
+            questions: ["Is _____ correct?", "can you confirm _____ ?", "can you confirm _____  please?",
+                "can you confirm _____  again?", "can you confirm _____  one more time?"
+            ]
+        }
+    ]
+</script>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://sdlms.deepthought.education/assets/uploads/files/system/site-logo.svg" alt=""></a>
+        </div>
+    </nav>
+    <form class="p-3">
+        <div class="mb-3">
+            <label for="categorySelect" class="form-label">Category</label>
+            <select name="category" class="form-control" id="categorySelect">
+                <option value="">-- Select Category --</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="question" class="form-label">Question</label>
+            <select name="question" class="form-control" id="question">
+                <option value="">-- Select Question --</option>
+                <option value="Would you explain _____ ?">Would you explain _____ ?</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="var" class="form-label "><span>Fill the blank with</span> </label>
+            <input type="search"  name="var" id="var" class="form-control">
+        </div>
+       
+        <div class="mb-3">
+            <label  class="form-label">Preview Question
+            </label>
+            <textarea name="content" readonly class="form-control" id="content" rows="2"></textarea>
+            <small id="alert" style="color:#0029FF"></small>
+
+        </div>
+
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const copy = (text) => {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+        $('#categorySelect').html(config.map((item) => `<option value="${item.name}">${item.label}</option>`))
+        $('#categorySelect').on('change', function () {
+            let category = $(this).val();
+            let questions = config.find(x => x.name == category).questions;
+            if (!questions || questions.length == 0) return;
+            let options = questions.map(x => `<option value="${x}">${x}</option>`);
+            $('#question').html(`<option value="">-- Select Question --</option>` + options.join(''));
+        });
+        $('#var').on('input', function () {
+            let fillWith = $(this).val();
+            let question = $('#question').val();
+            $('#content').val(`${question.replace('_____',fillWith)}`);
+        });
+        $('#var').on('change', function () {
+            copy($('#content').val());
+            $('#alert').html('Copied to clipboard!');
+        })
+        $('#question').on('change', function () {
+            let question = $(this).val();
+            if (!question) return;
+            let fillWith = $('#var').val();
+            $('#content').val(`${question.replace('_____',fillWith)}`);
+            $('#var').trigger('change');
+        });
+        
+    </script>
+     <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("../sw.js",{
+                scope: "/"
+            }).then(function (registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

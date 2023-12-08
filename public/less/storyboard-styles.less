@@ -1,0 +1,230 @@
+//MicroDashboard
+.microdashboard-menu-option{
+    justify-content: center;
+    margin-left: 1rem;
+    color: #0029ff; 
+    font-size: 15px;
+
+    margin-right:0.25rem ;
+}
+//ReportReview
+:root{
+    --pink:#ea4c89;
+    --lightblue:#0077b5;
+    --white : #f2f2f2;
+    --black:rgba(0, 0, 0, 0.1);
+    --lightblack:rgba(0, 0, 0, 0.2);
+    --lightdark:#4481eb;
+    --skyblue:#04befe;
+    --lightbrown: #666;
+    --grey:rgba(255, 255, 255, 0.3);
+    --blackincode: #000000;
+    --lightblack:rgba(0, 0, 0, 0.25);
+    --mediumblue : #3683F0;
+    --lightblackhover:rgb(64 60 67 / 16%);
+    --lightblackcolor: rgba(0, 0, 0, 0.3);
+    --lightgrey:rgba(255, 255, 255, 0.5);
+    --mediumlightblue :#698fb7;
+    --royalblue : royalblue;
+  }
+
+  /* 
+    @author imshawan
+    Please do not declare styles like this, it has global effect when you are giving styles to an entire tag
+    Therefore i'm commenting out these
+  */
+  table {
+    overflow: hidden;
+    // margin-top: 50px;
+    margin-right: 150px;
+  }
+  table th, table td {
+    text-align: left;
+    cursor: pointer;
+  }
+  table tr {
+    transition: all 0.5s ease-in-out;
+  }
+  table tr.slide-out {
+    transform: rotateX(90deg);
+  }/*# sourceMappingURL=style.css.map */
+  
+  body{
+    margin: 0;
+  }
+  
+  .td-data{
+    min-width: 350px;
+    /* min-height: 200px !important */
+    
+  }
+  .data-part{
+    padding: 10px 10px;
+      height: 150px;
+      text-overflow: scroll;
+      overflow-y: scroll;
+  }
+  .table-row{
+    transition: all 0.5s ease-in-out;
+  }
+  .table-row .slide-out{
+   transform: rotateX(90deg);
+  }
+  
+  
+  
+  #thead{
+    text-align: center;
+  }
+  .total-navbar{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    background: #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin-top: -10px;
+    height: 60px;
+  }
+
+  /* 
+    @author imshawan
+    Please do not declare styles like this, it has global effect when you are giving styles to a common class
+    Instead be specific, wrap styles under your parent "element class" of your page
+    Therefore i'm commenting out these
+  */
+
+  // .icons{
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   margin-top: 20px;
+  //   cursor: pointer;
+  // }
+  #backgroundpic{
+    background-image: url("https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: cover;
+    cursor: pointer;
+  }
+  .round-background{
+    background-color: #3683F0;;
+    border-radius: 250px;
+    margin-left: 25px;
+    width: 26px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .icons p i{
+   color: #FFFFFF;
+   margin-left: 4px;
+   margin-top: 4px;
+  }
+  #bell{
+    color: #FFFFFF;
+  }
+  #three-dots{
+    color: #3683F0;
+    margin-left: 20px;
+  }
+  
+  .sidenav {
+    border-right: 1px solid black;
+      border-top: 1px solid black;
+      /* border-left: 1px solid black; */
+  
+      display: block;
+      /* height: 100%; */
+      /* width: 220px; */
+      position: relative;
+      /* z-index: 1; */
+      top: -22px;
+      right: 0px;
+      /* left: 53px; */
+      min-width: 250px;
+      left: -245px;
+      /* border: 1px solid black; */
+      /* overflow-x: hidden; */
+      margin-top: 73px;
+      box-shadow: 0px 20px 12px var(--lightblackhover);
+  }
+  .sidenav a {
+    padding: 9px 9px 8px 12px;;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--blackincode);
+    display: block;
+    font-weight: 500;
+    margin-left: 35px;
+    /* border: 1px solid black; */
+  }
+  
+   .sidenav a:hover {
+    color: var(--white);
+    background-color: #4481eb;
+    text-decoration: none;
+  } 
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* .fa-solid, .fas{
+    font-weight: 900;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-left: 23px;
+    border: 1px solid black;
+  } */
+  .fa-brands, .fa-wpexplorer{
+    font-weight: 900;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 15px; 
+    margin-left: 10px;
+  }
+  #dashboard{
+    font-weight: 900;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+  
+  }
+  #dashboard-part{
+    margin-top: -10px;
+  }
+  .main-body{
+    display: flex;
+    
+  }
+  .main-body{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 16%;
+  }
+  .table-responsive-md{
+    margin-left: -190px;
+    margin-top: 25px;
+  }
+  .content {
+    display: table-cell;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    word-break: break-word;
+    /* border-bottom: 0.5ex solid rgba(0, 200, 0, 0.75); */
+      text-align: left;
+      vertical-align: middle;
+      word-wrap: break-word;
+      height: 50%;
+  }
+  

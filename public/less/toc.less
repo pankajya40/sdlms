@@ -1,0 +1,80 @@
+.page-toc {
+    .sdlms-container {
+        padding: 0!important;
+        width: 100%!important;
+    }
+}
+
+.cjslib-year,.cjslib-month{
+    width: 100% !important;
+}
+.cjslib-days label{
+    margin: 0 !important;
+}
+.calendar-container{
+    width: 320px;
+}
+.calendar-container-wrapper{
+    width: calc(100% - 320px);
+    height: calc(100vh - 75px);
+    overflow: auto;
+
+}
+.cjslib-size-small {
+    height: 350px!important;
+    width: 320px!important;
+}
+.cjslib-month {
+    font-size: 24px!important;
+    padding: 12px 5px!important;
+}
+.toc-table thead{
+    background: var(--secondary-background-color);
+    font-size: 17px;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+.toc-table thead th{
+    background-color: var(--tertiary-text-color)60;
+    color: var(--secondary-text-color);
+    padding: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.toc-table tr{
+    height: 1px
+}
+.toc-table td{
+    text-align: center;
+	border: 1px solid #ddd;
+    height: inherit;
+}
+.time-slot {
+	padding: 12px;
+}
+
+.toc-table td .input {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    outline: none !important;
+}
+
+.toc-table td textarea.input {
+    margin-top: 5px;
+    padding: 5px;
+    resize: none;
+}
+
+.toc-journal {
+    height: 56vh; 
+    position: fixed; 
+    top: calc(var(--sdlms-font-size) * 5.625);
+}
+
+.toc-feed {
+    height: calc(107vh - calc(var(--sdlms-font-size) * 5.625) - 62vh); 
+    position: fixed; 
+    bottom: 0;
+}

@@ -1,0 +1,19 @@
+cateogary{
+    uid:user id;
+    preferences:{
+         global:[cid:15,sub_cids:[1,2,3]],
+         feed:[cid:10,sub_cids:[4,5,6]],
+         events:[cid:11,sub_cids:[7,8,9]],
+         nudge:[cid:12,sub_cids:[14,16,17]],
+         discussion:[cid:13,sub_cids:[18,19,20,21]],
+    }
+}
+
+DT thon is a platform for individuals which are chintus and have deep thinking.
+  letting everyone take up projects by world's
+   top companies which may have posted their projects
+    on the platform. along with this, dt thon courses can 
+    help Qadir gain the skills he lacks, ie communication
+     skills as dt provides holistic learning acompassing such soft
+      skills too. Lastly Qadir can post his own projects and ideas then 
+      coordinate with like minded individuals to create and gain his own experience in the field

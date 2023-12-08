@@ -1,0 +1,124 @@
+Student widget make it small [pop it like onesignal]
+Make Student  widget Creation to left
+and dock reactions to right;
+Give Edit permission while comapring widget if author is same viewer
+Quiz modes:
+    Answer mode [when another is viewing];
+    View Mode [when creater is seeing + Preview Mode];
+    Edit mode [Preview Mode + sequence mode];
+    Collapse Mode for Preview Mode;
+
+Session Timer ==> 
+    Play,pause,stop
+
+
+
+SD LMS =>
+
+Need to Add Notepad which have tb as pages;
+Gs for Bugs and need to add and update with remark;
+need to Check for TB without session [f-1]
+Images need to reviewwd  and Validate 
+
+
+
+GIve a label to top of each chart
+Remove Dec. from x axes from charts
+add Social pulse in title right side 
+Name of Poll to be added in graph and Creation  if not given (No name + createdAt('HH:mm'))
+
+
+
+Add array of Assets | remove targets and pids;
+
+DontTrack | noDraft  || 
+do_not_track
+
+
+/creator/storyboard/1231
+
+Add one Task sidebar
+on click of that -> show task contianer
+add multiple assets ;
+
+
+on disconnect and reconnect show online offline
+
+
+
+Caching Level 
+Communication Engine
+Parent Dashboard
+
+
+
+
+
+Shubham -> testing Mobile [bad]
+           signup -> testing working testing; 
+           You dont know what u can do apart from testing;
+        Shawan , Shagun;
+
+
+
+
+
+Divyans Verma - Events  [bad]
+           Others workshop and LDI;1 week;
+           Card and Events;  sinjii;
+           displayng the host detials;
+           No updated of code  -> 1 week; he infomred times thn no update; Stuck;
+           Last week -> Both figuring out
+
+
+sinjii -> Events; [bad]
+        Last Satudary;
+        previous to previous Satudary;
+        it shows the events;
+        last week randerding done;
+        wensday to updates;
+        Divyans Verma;
+        it will be done today;
+        Shawan,Shagun,Alex
+
+
+            
+Mohit -> Disscusion Room Class [Last week] [no idea] [OK]
+        Every can access it from anywhere;
+        Tommorow it will be done;
+        He will never get stuck;
+        Shagun,Shawan
+
+
+Naveen -> Data Collection [Oct 10th] [Good]
+
+          it's going good;
+          From SDLMS;
+          Shawan , Shagun
+
+
+Amrit -> Kpis [Yesteday] [Re work] [Bad]
+
+        To calculate how much we have in quantity;
+        data Model not ready;
+        Stuck
+        what is team
+
+
+Nikhil -> Rigor Builder [monday] [After 3days]
+          if member busy 30 min;
+
+
+Divyans Sareen -> Dthon Reflection [last week] [Leadership]
+             ->  Fardin 
+             [Creator Crud | Assosiation | Application]
+             After Last friday Stuck;
+
+Abhishesk -> Microlead [3 days] [OK]
+            Kpis -> Bala and Amrit;
+            Project Mana
+
+Ronak -> DT drive [ 1 Week ] [Good]
+ 
+
+Logu ->  DT drive  [1 Week] [Good]

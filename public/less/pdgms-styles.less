@@ -1,0 +1,52 @@
+.page-pdgms,.page-quiz,.page-mcq {
+
+    .sdlms-container {
+        padding: 0px !important;
+        --max-container-width: 100% !important;
+    }
+    #sidebarToggle {
+        position: fixed;
+        left: 16.6rem;
+        top: calc(var(--sdlms-font-size)*5.625);
+        transform: translate(-148%,33%);
+        z-index: 9;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        background: #fff;
+    }
+    #sidebarToggle.active{
+        transform:translate(117%,50%);
+        left: -1.5rem;
+    }
+  
+}
+.sb-sidenav-toggled #page-content-wrapper .navbar{
+    padding-left: 3rem;
+}
+#page-content-wrapper .navbar{
+    padding-top: 2rem;
+}
+#page-content-wrapper .tabs-container {
+    height: calc(100vh - calc(var(--sdlms-font-size)*5.625) - 62px);
+    overflow: auto;
+}
+#sidebar-wrapper .list-group{
+    flex-wrap: nowrap;
+}
+#sidebar-wrapper .list-group li{
+    width: 100%;
+}
+.sb-sidenav-toggled #page-content-wrapper{
+    width: 100% !important;
+}
+.single-journals-header{
+    background: white;
+    position: sticky;
+    top: 0;
+}

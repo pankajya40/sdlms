@@ -1,0 +1,199 @@
+// Styles for Insight Widget
+.insight-spotter {
+  background-color: rgba(136, 136, 136, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: calc(var(--primary-border-radius) * 1.4);
+  user-select: none;
+  width: 30%;
+  z-index: 999;
+}
+.insightCollapse {
+  border-radius: calc(var(--primary-border-radius) * 1.4);
+  // background-color: rgba(136, 136, 136, 0.8);
+  background-color: #f4f4f4;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
+}
+.insight-spotter-body {
+  background-color: #f4f4f4;
+  border-radius: calc(var(--primary-border-radius) * 1.4);
+}
+.insight-placeholder {
+  font-size: var(--sdlms-font-size-18);
+}
+.insight-text {
+  font-size: var(--sdlms-font-size-14);
+}
+.reaction-container {
+  margin-bottom: 44px;
+}
+.your-reaction-text {
+  font-size: var(--sdlms-font-size-18);
+}
+.insight-spotter .nav-tabs {
+  border: calc(var(--primary-border-radius) * 1.4)
+    calc(var(--primary-border-radius) * 1.4) 0 0;
+}
+.insight-spotter .nav-item {
+  width: 33.33% !important;
+}
+.reaction-tabs .nav-item.active .nav-link {
+  color: #fff !important;
+  background-color: rgba(136, 136, 136, 0.8) !important; 
+  backdrop-filter: blur(8px) !important;
+}
+.nav-link#value {
+  color: #000;
+  border-radius: calc(var(--primary-border-radius) * 1.4) 0 0 0;
+  border: 2px solid rgba(136, 136, 136, 0.8) !important;
+  padding: 6px 0;
+  font-size: var(--sdlms-font-size-14);
+}
+.nav-link#wisdom {
+  color: #000;
+  border-radius: 0;
+  border-top: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-right: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-left: 0;
+  border-bottom: 2px solid rgba(136, 136, 136, 0.8) !important;
+  padding: 6px 0;
+  font-size: var(--sdlms-font-size-14);
+}
+.nav-link#emotion {
+  color: #000;
+  border-radius: 0 calc(var(--primary-border-radius) * 1.4) 0 0 !important;
+  border-top: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-right: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-left: 0;
+  border-bottom: 2px solid rgba(136, 136, 136, 0.8) !important;
+  padding: 6px 0;
+  font-size: var(--sdlms-font-size-14);
+}
+.insight-spotter .tab-content {
+  padding: 12px 24px 0 24px;
+  border-left: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-bottom: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-right: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-radius: 0 0 calc(var(--primary-border-radius) * 1.4)
+    calc(var(--primary-border-radius) * 1.4) !important;
+}
+.reaction-btn {
+  margin-bottom: 12px;
+  background-color: transparent;
+}
+.reaction-btn.active {
+  background-color: #fff !important; 
+  border: 1px solid #dee2e6!important;
+  border-radius: calc(var(--primary-border-radius) * 1.4);
+  padding: 8px;
+ }
+.reaction-icon {
+  font-size: var(--sdlms-font-size-25);
+}
+.reaction-text {
+  font-size: var(--sdlms-font-size-12);
+}
+.description-container {
+  border: 2px solid rgba(136, 136, 136, 0.8) !important;
+  border-radius: calc(var(--primary-border-radius) * 1.4);
+  padding: 4px 8px;
+}
+.description-container .description-text-wrapper {
+  border-right: 2px solid rgba(136, 136, 136, 0.8);
+}
+.selected-icon {
+  font-size: var(--sdlms-font-size-28);
+}
+.selected-value,
+.selected-description {
+  font-size: var(--sdlms-font-size-14);
+}
+.selected-description {
+  line-height: 1.4;
+}
+.your-reflection-text {
+  font-size: var(--sdlms-font-size-16);
+}
+.reflection-text {
+  font-size: var(--sdlms-font-size-14);
+  resize: none;
+}
+#submit-insight {
+  background-color: rgba(136, 136, 136, 0.8) !important;
+  gap: 4px;
+}
+textarea::placeholder {
+  font-size: var(--sdlms-font-size-14);
+}
+
+// Scrollbar
+.insightCollapse::-webkit-scrollbar, #insight-feed .scrollable::-webkit-scrollbar {
+  width: 16px;
+}
+.insightCollapse::-webkit-scrollbar-thumb, #insight-feed .scrollable::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-clip: content-box;
+  background-color: rgba(136, 136, 136, 0.8)
+}
+
+// Styles for Insight Feed
+.modal-insight {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  background: #fff;
+  right: 0px;
+  transition: all .5s;
+}
+#insight-feed .username {
+  font-size: 14px;
+}
+#insight-feed .tag, #insight-feed .judgement-count {
+  font-size: 12px;
+}
+#insight-feed .insight-container:not(:last-child) {
+  border-bottom: 1px solid #dee2e6!important;
+}
+#insight-feed .tag.category {
+  padding-right: 4px;
+  border-right: 1.5px solid #000;
+}
+#insight-feed .tag.sub-category {
+  padding-left: 4px;
+}
+#insight-view .new-judgement {
+  resize: none;
+}
+#insight-feed .user-image {
+  width: 24px;
+  height: 24px;
+}
+#insight-feed .scrollable {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+#insight-feed textarea {
+  border-radius: calc(var(--primary-border-radius)/1.6);
+}
+#insight-feed .scrollable-container, #insight-feed .back-btn {
+  background-color: #f1f3f5;
+  border-radius: calc(var(--primary-border-radius)/1.6);
+}
+#insight-feed .judgement-container {
+  border-radius: calc(var(--primary-border-radius)/1.6);
+}
+#insight-feed .judgement-container:nth-child(even) {
+  background-color: #d0ebff;
+}
+#insight-feed .judgement-container:nth-child(odd) {
+  background-color: #f3d9fa;
+}
+#insight-feed #my-insights {
+  width: 18px;
+  height: 18px;
+}
+#insight-feed .my-insights-text:hover {
+  cursor: pointer;
+}
